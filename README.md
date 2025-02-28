@@ -1,1 +1,2 @@
-# Data-Cleaning-
+# Data-Cleaning Project with Postgrsql.
+In this project I cleaned and analyzed the dataset of total layoffs of the Companies. 
