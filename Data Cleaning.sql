@@ -163,6 +163,10 @@ set total_laid_off = NULL
 where total_laid_off = 'NULL';
 
 update  layoffs_staging2 		
+set funds_raised_millions = NULL
+where funds_raised_millions = 'NULL';
+
+update  layoffs_staging2 		
 set percentage_laid_off = NULL
 where percentage_laid_off = 'NULL';
 
@@ -173,6 +177,9 @@ alter column total_laid_off type int using total_laid_off::int;
 
 alter table layoffs_staging2
 alter column percentage_laid_off type decimal using percentage_laid_off::decimal;
+
+alter table layoffs_staging2
+alter column funds_raised_millions type decimal using funds_raised_millions::decimal;
 
 --------------------------------------------------------------------------------------------------------------------------------
 
